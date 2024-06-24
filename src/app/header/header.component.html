@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="logo-container">
+        <div class="logo">
+            <a href="#" (click)="navigateHome()">
+                <img src="../../assets/images/logo.png" alt="Car Rent Icon" class="logo-icon">
+              </a>
+        </div>
+    </div>
+    <div *ngIf="adminLoggedIn" class="icons">
+        <i (click)="navigateToAccount()" class="material-icons account-icon">account_circle</i>
+        <div class="cart-icon-container" (click)="navigateToCart()">
+            <i class="material-icons cart-icon">shopping_cart</i>
+            <div class="cart-counter" *ngIf="cartCount > 0">{{ cartCount }}</div>
+        </div>
+    </div>
+    <div *ngIf="!adminLoggedIn" class="icons">
+        <i (click)="navigateToLogin()" class="material-icons login-icon">login</i>
+    </div>
+</div>

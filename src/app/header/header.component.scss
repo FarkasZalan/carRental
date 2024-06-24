@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* Prevents the header from shrinking */
+    width: 100%; /* Ensure header takes up full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: hidden; /* Prevents overflow of child elements */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-height: 70px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    font-size: 30px !important;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons {
+    display: flex;
+    font-size: 30px !important;
+    gap: 20px;
+    padding-right: 2%;
+    white-space: nowrap;
+}
+
+.account-icon:hover {
+    cursor: pointer;
+}
+
+.account-icon {
+    font-size: 30px !important;
+}
+
+.cart-icon {
+    font-size: 30px !important;
+}
+
+.login-icon {
+    font-size: 30px !important;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+}
+
+.login-icon:hover {
+    cursor: pointer;
+}
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

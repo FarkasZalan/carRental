@@ -1,0 +1,36 @@
+.flex-centered {
+    margin: auto;
+  }
+  mat-card-content {
+    display: flex;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .sub-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  
+  .home-button {
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d68f;
+    color: #fff;
+    border: 1px solid #01bb7d; /* Added border for consistency */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #2ce69b;
+  }
